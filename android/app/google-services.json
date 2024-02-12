@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "666923496095",
+    "project_id": "cinedb-6e2ce",
+    "storage_bucket": "cinedb-6e2ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666923496095:android:aabeb786b236a9a37aa8aa",
+        "android_client_info": {
+          "package_name": "com.mytech.cinedb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9FMNEr0J0XMX_BTt2nxsmHeCmgppcZlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
