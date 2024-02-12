@@ -4,8 +4,10 @@ Aplicación móvil desarrollada en Flutter para consultar información y trailer
 
 ## Capturas de Pantalla
 <div>
-<img src="movies.jpeg" width="200"/>
-<img src="profile.jpeg" width="200"/>
+  <img src="movies.jpeg" width="200"/>
+  <img src="movie_details.jpeg.jpeg" width="200"/>
+  <img src="movies_list.jpeg.jpeg" width="200"/>
+  <img src="profile.jpeg" width="200"/>
 </div>
 
 ## Funcionalidades
