@@ -61,8 +61,8 @@ class _MoviesCardSliderState extends State<MoviesCardSlider> {
                 controller: scrollController,
                 scrollDirection: Axis.horizontal,
                 itemCount: widget.movies.length,
-                itemBuilder: (_, int index) => _MoviePoster(
-                    widget.movies[index], widget.movies[index].id)),
+                itemBuilder: (_, int index) =>
+                    _MoviePoster(widget.movies[index])),
           ),
         ],
       ),
@@ -72,14 +72,11 @@ class _MoviesCardSliderState extends State<MoviesCardSlider> {
 
 class _MoviePoster extends StatelessWidget {
   final Movie movie;
-  final int heroId;
 
-  const _MoviePoster(this.movie, this.heroId);
+  const _MoviePoster(this.movie);
 
   @override
   Widget build(BuildContext context) {
-    movie.id = heroId;
-
     return Container(
       width: 130,
       height: 190,
@@ -89,20 +86,17 @@ class _MoviePoster extends StatelessWidget {
           GestureDetector(
             onTap: () => //context.push('/home/0/movie/${movie.id}'),
                 Navigator.pushNamed(context, 'details', arguments: movie),
-            child: Hero(
-              tag: movie.id.toString(),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: CachedNetworkImage(
-                  imageUrl: movie.backdropPath,
-                  placeholder: (_, __) => Image.asset('assets/placeholder.jpg'),
-                  errorWidget: (context, error, stackTrace) {
-                    return Image.asset('assets/placeholder.jpg');
-                  },
-                  width: 130,
-                  height: 190,
-                  fit: BoxFit.cover,
-                ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: CachedNetworkImage(
+                imageUrl: movie.backdropPath,
+                placeholder: (_, __) => Image.asset('assets/placeholder.jpg'),
+                errorWidget: (context, error, stackTrace) {
+                  return Image.asset('assets/placeholder.jpg');
+                },
+                width: 130,
+                height: 190,
+                fit: BoxFit.cover,
               ),
             ),
           ),

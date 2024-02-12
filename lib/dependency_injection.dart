@@ -13,8 +13,9 @@ import 'package:cinedb/infrastructure/repositories/movie_repository_impl.dart';
 class DependencyInjection {
   static void init() async {
     // Data sources
-    Get.put(DataConnectionChecker());
-    Get.put(NetworkInfo(Get.find<DataConnectionChecker>()));
+    Get.lazyPut(() => DataConnectionChecker(), fenix: true);
+    Get.lazyPut(() => NetworkInfo(Get.find<DataConnectionChecker>()),
+        fenix: true);
 
     Get.put<LocalDatasource>(IsarDatasource());
     Get.lazyPut<MoviesDatasource>(() => MovieDbDatasource(), fenix: true);

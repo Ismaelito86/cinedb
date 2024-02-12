@@ -8,9 +8,7 @@ import 'package:cinedb/presentation/screens/maps_screen.dart';
 import 'package:cinedb/presentation/screens/movies_screen.dart';
 import 'package:cinedb/presentation/screens/profile_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:cinedb/dependency_injection.dart';
 import 'package:provider/provider.dart';
 
@@ -45,7 +43,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Películas',
       //routerConfig: appRouter,
