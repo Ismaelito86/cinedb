@@ -44,29 +44,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC15WC3xH412kl9vG14VYSQkkwX788m6Ho',
-    appId: '1:666923496095:web:89dfa37dcd9a589b7aa8aa',
-    messagingSenderId: '666923496095',
-    projectId: 'cinedb-6e2ce',
-    authDomain: 'cinedb-6e2ce.firebaseapp.com',
-    storageBucket: 'cinedb-6e2ce.appspot.com',
-    measurementId: 'G-XYFLVLEEK6',
+    apiKey: 'Template',
+    appId: '1:Template',
+    messagingSenderId: 'Template',
+    projectId: 'Template',
+    authDomain: 'Template',
+    storageBucket: 'Template',
+    measurementId: 'Template',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA9FMNEr0J0XMX_BTt2nxsmHeCmgppcZlg',
-    appId: '1:666923496095:android:aabeb786b236a9a37aa8aa',
-    messagingSenderId: '666923496095',
-    projectId: 'cinedb-6e2ce',
-    storageBucket: 'cinedb-6e2ce.appspot.com',
+    apiKey: 'Template',
+    appId: '1:Template',
+    messagingSenderId: 'Template',
+    projectId: 'Template',
+    storageBucket: 'Template',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBi695jzI2bgpPxk9xxo42TRlQibPvWk5s',
-    appId: '1:666923496095:ios:c3b46e05de9fb0d77aa8aa',
-    messagingSenderId: '666923496095',
-    projectId: 'cinedb-6e2ce',
-    storageBucket: 'cinedb-6e2ce.appspot.com',
-    iosBundleId: 'com.mytech.cinedb',
+    apiKey: 'Template',
+    appId: '1:Template',
+    messagingSenderId: 'Template',
+    projectId: 'Template',
+    storageBucket: 'Template',
+    iosBundleId: 'Template',
   );
 }
